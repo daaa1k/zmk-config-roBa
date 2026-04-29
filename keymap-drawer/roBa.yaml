@@ -264,3 +264,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
+combos:
+- p: [18, 19, 20]
+  k: ''

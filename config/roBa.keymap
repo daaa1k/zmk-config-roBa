@@ -53,10 +53,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R               &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F               &kp G        &kp ESC        &kp MINUS      &kp H        &kp J  &lt 5 K    &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V               &lt 4 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LA(INT_HENKAN)  &lt 1 SPACE  &kp TAB        &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E             &kp R           &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F           &kp G        &kp ESC        &kp MINUS      &kp H        &kp J  &lt 4 K    &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V           &lt 5 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &kp INT_HENKAN  &lt 1 SPACE  &kp TAB        &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
         };
 
@@ -71,10 +71,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans             &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME  &kp LS(PAGE_DOWN)  &kp PAGE_UP   &kp END          &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                      &trans
+&trans  &trans  &trans  &trans  &trans                      &trans    &trans          &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                   &trans
             >;
         };
 
@@ -87,21 +87,21 @@
             >;
         };
 
-        BLUETOOTH {
-            bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-        };
-
         SCROLL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        BLUETOOTH {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };

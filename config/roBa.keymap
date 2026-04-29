@@ -26,34 +26,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -89,10 +62,10 @@
 
         NUM {
             bindings = <
-&trans  &kp N7   &kp N8  &kp N9  &kp F10                       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&trans  &kp N4   &kp N5  &kp N6  &kp F11  &kp F12      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans  &kp N1   &kp N2  &kp N3  &trans   &trans       &trans  &kp F11  &kp F12  &trans  &trans  &trans
-&trans  &kp DOT  &kp N0  &trans  &trans   &trans       &trans  &trans                            &trans
+&trans  &kp N7   &kp N8  &kp N9  &trans                      &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&trans  &kp N4   &kp N5  &kp N6  &trans  &trans      &trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&trans  &kp N1   &kp N2  &kp N3  &trans  &trans      &trans  &kp F11  &kp F12  &trans  &trans  &trans
+&trans  &kp DOT  &kp N0  &trans  &trans  &trans      &trans  &trans                            &trans
             >;
         };
 

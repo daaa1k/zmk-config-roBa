@@ -1,4 +1,5 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -14,11 +15,23 @@
             ;
 };
 
+&zip_temp_layer {
+    // AutoMouseLayer(AML)が有効な時に下記以外のキーを押すとAMLを解除する
+    excluded-positions = <
+        18 // J
+        19 // K
+        20 // L
+    >;
+};
+
 / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        // トラックボール使用後、10秒間、レイヤー3を有効化する
+        input-processors = <&zip_temp_layer 3 10000>;
     };
 };
 

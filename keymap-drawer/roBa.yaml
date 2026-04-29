@@ -23,7 +23,7 @@ layers:
   - {t: K, h: SCROLL}
   - L
   - ''''
-  - {t: Z, h: LEFT SHIFT}
+  - Z
   - X
   - C
   - V
@@ -38,9 +38,9 @@ layers:
   - LCTRL
   - LEFT ALT
   - LEFT COMMAND
-  - INT HENKAN
+  - {t: '&kp_exit_AML TAB', h: LSHIFT}
   - {t: SPACE, h: NUM}
-  - TAB
+  - INTERNATIONAL 4
   - BACKSPACE
   - {t: ENTER, h: ARROW}
   - DEL
@@ -264,6 +264,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
-combos:
-- p: [18, 19, 20]
-  k: ''

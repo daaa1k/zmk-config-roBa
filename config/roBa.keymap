@@ -1,16 +1,15 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 #define MOUSE 3
 
 // マウスキーを押したらタイムアウトを10秒間延長する
 // ※ 3 は AutoMouseLayer
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 3 10000>;
-};
+
+&mkp_input_listener { input-processors = <&zip_temp_layer 3 10000>; };
 
 &mt {
     flavor = "balanced";
@@ -35,14 +34,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        test {
-            bindings = <&none>;
-            key-positions = <18 19 20>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -105,10 +97,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R           &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F           &kp G        &kp ESC        &kp MINUS      &kp H        &kp J  &lt 4 K    &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V           &lt 5 B      &kp COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &kp INT_HENKAN  &lt 1 SPACE  &kp TAB        &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
+&kp Q      &kp W         &kp E             &kp R                           &kp T                                                &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D             &kp F                           &kp G        &kp ESC                  &kp MINUS      &kp H        &kp J  &lt 4 K    &kp L    &kp SQT
+&kp Z      &kp X         &kp C             &kp V                           &lt 5 B      &kp COLON                &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt_exit_AML_on_tap LSHIFT TAB  &lt 1 SPACE  &kp INTERNATIONAL_4      &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
         };
 

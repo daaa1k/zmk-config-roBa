@@ -40,22 +40,22 @@ layers:
   - LEFT COMMAND
   - {t: '&kp_exit_AML TAB', h: LSHIFT}
   - {t: SPACE, h: NUM}
-  - INTERNATIONAL 4
+  - Alt+`
   - BACKSPACE
   - {t: ENTER, h: ARROW}
   - DEL
   NUM:
-  - {t: ▽, type: trans}
+  - +
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
+  - '='
   - F1
   - F2
   - F3
   - F4
   - F5
-  - {t: ▽, type: trans}
+  - '-'
   - '4'
   - '5'
   - '6'
@@ -67,7 +67,7 @@ layers:
   - F8
   - F9
   - F10
-  - {t: ▽, type: trans}
+  - '*'
   - '1'
   - '2'
   - '3'
@@ -79,7 +79,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - /
   - .
   - '0'
   - {t: ▽, type: trans}
@@ -132,7 +132,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  '3':
+  AUTO_MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

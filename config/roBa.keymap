@@ -115,10 +115,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                   &trans
+&kp_exit_AML EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET     &kp DOLLAR                         &trans    &trans          &trans        &trans           &trans
+&kp QUESTION              &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp AMPERSAND  &trans      &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp PERCENT               &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH      &kp AT_SIGN    &trans      &trans  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
+&trans                    &trans                &trans                 &trans        &trans         &trans      &trans  &trans                                                   &trans
             >;
         };
 

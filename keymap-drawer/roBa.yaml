@@ -89,7 +89,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   ARROW:
-  - '&kp_exit_AML EXCLAMATION'
+  - '!'
   - (
   - )
   - ^
@@ -104,7 +104,7 @@ layers:
   - ']'
   - '*'
   - '&'
-  - {t: ▽, type: trans}
+  - '`'
   - {t: ▽, type: trans}
   - LEFT
   - DOWN ARROW

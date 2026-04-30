@@ -89,21 +89,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   ARROW:
+  - '&kp_exit_AML EXCLAMATION'
+  - (
+  - )
+  - ^
+  - $
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '?'
+  - '['
+  - ']'
+  - '*'
+  - '&'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT
@@ -111,11 +111,11 @@ layers:
   - UP ARROW
   - RIGHT ARROW
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '%'
+  - '{'
+  - '}'
+  - '#'
+  - '@'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME

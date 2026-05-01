@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: write
     with:
-      commit_message: "[Draw] ${{ github.event.head_commit.message || 'Update keymap drawing' }}"
+      commit_message: "docs: update keymap drawing"
       amend_commit: false
       keymap_patterns: "config/*.keymap"
       json_path: "config"

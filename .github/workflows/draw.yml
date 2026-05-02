@@ -15,7 +15,7 @@ jobs:
       contents: write
     with:
       commit_message: "docs: update keymap drawing"
-      amend_commit: false
+      amend_commit: true
       keymap_patterns: "config/*.keymap"
       json_path: "config"
       config_path: "keymap_drawer.config.yaml" # config file, ignored if not exists

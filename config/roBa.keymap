@@ -8,6 +8,7 @@
 
 // マウスキーを押したらタイムアウトを10秒間延長する
 // ※ 3 は AutoMouseLayer
+// test
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 3 10000>; };
 

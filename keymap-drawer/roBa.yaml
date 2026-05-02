@@ -178,7 +178,7 @@ layers:
   - {t: ▽, type: trans}
   SCROLL:
   - '1'
-  - {t: ▽, type: trans}
+  - '2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

@@ -116,7 +116,7 @@ layers:
   - '}'
   - '#'
   - '@'
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - HOME
   - PAGE DOWN

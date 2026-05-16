@@ -40,7 +40,7 @@ layers:
   - LEFT GUI
   - {t: '&kp_exit_AML TAB', h: LSHIFT}
   - {t: SPACE, h: NUM}
-  - Alt+`
+  - {t: Alt+`, h: Alt+LCTRL}
   - BACKSPACE
   - {t: ENTER, h: ARROW}
   - DEL

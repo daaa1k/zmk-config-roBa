@@ -37,7 +37,7 @@ layers:
   - /
   - LCTRL
   - LEFT ALT
-  - LEFT COMMAND
+  - LEFT GUI
   - {t: '&kp_exit_AML TAB', h: LSHIFT}
   - {t: SPACE, h: NUM}
   - Alt+`
@@ -59,7 +59,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - {t: ▽, type: trans}
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F6
@@ -71,17 +71,17 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - /
+  - .
   - {t: ▽, type: trans}
   - F11
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - /
-  - .
-  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -244,9 +244,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - '&bootloader'

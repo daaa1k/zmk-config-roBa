@@ -16,7 +16,7 @@ layers:
   - D
   - F
   - G
-  - ESC
+  - '&esc_eisu'
   - '-'
   - H
   - J

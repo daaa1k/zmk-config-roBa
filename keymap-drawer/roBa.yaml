@@ -94,10 +94,10 @@ layers:
   - )
   - ^
   - $
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+PAGE UP
+  - Sft+TAB
+  - TAB
+  - Ctl+PAGE DOWN
   - {t: ▽, type: trans}
   - '?'
   - '['

@@ -28,6 +28,14 @@
 };
 
 / {
+    chosen {
+        // #region agent log
+        // Temporary debug instrumentation for session 4e1082.
+        zephyr,console = &snippet_studio_rpc_usb_uart;
+        zephyr,shell-uart = &snippet_studio_rpc_usb_uart;
+        // #endregion agent log
+    };
+
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";

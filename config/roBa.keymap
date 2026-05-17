@@ -17,7 +17,7 @@
 };
 
 &trackball {
-    automouse-layer = <3>;
+    // マウス層は zip_temp_layer のみ（automouse-layer は require-prior-idle と併用不可）
     scroll-layers = <4>;
 
     // arrows {

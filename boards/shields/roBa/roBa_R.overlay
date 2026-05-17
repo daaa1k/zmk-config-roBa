@@ -16,8 +16,8 @@
 };
 
 &zip_temp_layer {
-    // キー入力から200msはAutoMouseLayer(AML)を発動しない
-    require-prior-idle-ms = <200>;
+    // キー入力から500msはAutoMouseLayer(AML)を発動しない
+    require-prior-idle-ms = <500>;
     // AutoMouseLayer(AML)が有効な時に下記以外のキーを押すとAMLを解除する
     excluded-positions = <
         18 // J

@@ -1,3 +1,4 @@
 {
-  "extends": ["github>daaa1k/renovate-config"]
+  "extends": ["github>daaa1k/renovate-config"],
+  "forkProcessing": "enabled"
 }

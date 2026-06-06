@@ -1,5 +1,6 @@
 #include "roBa.dtsi"
 #include <input/processors.dtsi>
+#include <behaviors/input_gestures_accel.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -27,6 +28,17 @@
     >;
 };
 
+&pointer_accel {
+    // 低速操作は細かく、高速操作は大きく動かす
+    input-type = <INPUT_EV_REL>;
+    track-remainders;
+    min-factor = <700>;
+    max-factor = <3000>;
+    speed-threshold = <1200>;
+    speed-max = <6000>;
+    acceleration-exponent = <2>;
+};
+
 / {
     trackball_listener {
         status = "okay";
@@ -34,7 +46,10 @@
         device = <&trackball>;
 
         // トラックボール使用後、10秒間、レイヤー3を有効化する
-        input-processors = <&zip_temp_layer 3 10000>;
+        input-processors = <
+            &pointer_accel
+            &zip_temp_layer 3 10000
+        >;
     };
 };
 

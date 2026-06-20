@@ -18,6 +18,7 @@
 
 &trackball {
     // マウス層は zip_temp_layer のみ（automouse-layer は require-prior-idle と併用不可）
+
     scroll-layers = <4>;
 
     // arrows {
@@ -34,7 +35,24 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+        };
+
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+        };
+
+        middle_click {
+            bindings = <&mkp MB3>;
+            key-positions = <18 19 20>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {

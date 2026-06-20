@@ -74,3 +74,5 @@ Pin the module revision in `config/west.yml` to avoid unexpected behavior change
 ## Notes
 
 If the first hardware test feels too slow for normal cursor movement, raise `min-factor` toward `800` or lower `speed-threshold`. If fine selection still feels too jumpy, lower `min-factor` toward `600` or raise `speed-threshold`.
+
+The Auto Mouse Layer referenced in this ADR was later removed. See [ADR-0002](./0002-remove-auto-mouse-layer.md).

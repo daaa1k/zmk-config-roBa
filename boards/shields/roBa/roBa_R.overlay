@@ -16,18 +16,6 @@
             ;
 };
 
-&zip_temp_layer {
-    // キー入力から500msはAutoMouseLayer(AML)を発動しない
-    require-prior-idle-ms = <500>;
-    // AutoMouseLayer(AML)が有効な時に下記以外のキーを押すとAMLを解除する
-    excluded-positions = <
-        18 // J
-        19 // K
-        20 // L
-        37 // LShift
-    >;
-};
-
 &pointer_accel {
     // 低速操作は細かく、高速操作は大きく動かす
     input-type = <INPUT_EV_REL>;
@@ -45,11 +33,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        // トラックボール使用後、10秒間、レイヤー3を有効化する
-        input-processors = <
-            &pointer_accel
-            &zip_temp_layer 3 10000
-        >;
+        input-processors = <&pointer_accel>;
     };
 };
 

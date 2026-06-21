@@ -40,7 +40,7 @@ layers:
   - LEFT GUI
   - {t: TAB, h: LSHIFT}
   - {t: SPACE, h: NUM}
-  - {t: Alt+`, h: Alt+LCTRL}
+  - {t: F23, h: Alt+LCTRL}
   - BACKSPACE
   - {t: ENTER, h: ARROW}
   - DEL

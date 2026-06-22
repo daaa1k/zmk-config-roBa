@@ -13,11 +13,18 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
+};
+
+&lt {
+    tapping-term-ms = <150>;
+    quick-tap-ms = <150>;
 };
 
 &trackball {
     // マウス層は zip_temp_layer のみ（automouse-layer は require-prior-idle と併用不可）
+
     scroll-layers = <4>;
 
     // arrows {
@@ -34,16 +41,16 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to_bt_layer {
+            bindings = <&mo 5>;
+            key-positions = <34 35 36>;
+        };
+    };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-
         exit_AML: exit_AML {
             compatible = "zmk,behavior-macro";
             wait-ms = <0>;
@@ -75,20 +82,11 @@
             label = "ESC_EISU";
             wait-ms = <10>;
             tap-ms = <5>;
-            bindings = <&kp LANG2 &kp F22 &kp ESC>;
+            bindings = <&kp LANG2 &kp ESC>;
         };
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
         tog_off: toggle_layer_off {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -115,8 +113,8 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                           &kp T                                                    &kp Y        &kp U  &lt 4 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                           &kp G        &esc_eisu                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z      &kp X         &kp C         &kp V                           &lt 5 B      &kp COLON                    &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &mt_exit_AML_on_tap LSHIFT TAB  &lt 1 SPACE  &mt LA(LCTRL) LA(GRAVE)      &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
+&kp Z      &kp X         &kp C         &kp V                           &kp B        &kp COLON                    &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &mt_exit_AML_on_tap LSHIFT TAB  &lt 1 SPACE  &mt LA(LCTRL) LC(SPACE)      &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
         };
 

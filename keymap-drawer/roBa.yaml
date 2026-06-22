@@ -27,7 +27,7 @@ layers:
   - X
   - C
   - V
-  - {t: B, h: BLUETOOTH}
+  - B
   - ':'
   - ;
   - N
@@ -40,7 +40,7 @@ layers:
   - LEFT GUI
   - {t: '&kp_exit_AML TAB', h: LSHIFT}
   - {t: SPACE, h: NUM}
-  - {t: Alt+`, h: Alt+LCTRL}
+  - {t: Ctl+SPACE, h: Alt+LCTRL}
   - BACKSPACE
   - {t: ENTER, h: ARROW}
   - DEL
@@ -247,7 +247,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -255,12 +255,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
+combos:
+- p: [34, 35, 36]
+  k: BLUETOOTH

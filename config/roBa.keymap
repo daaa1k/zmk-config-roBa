@@ -13,14 +13,10 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <150>;
-    tapping-term-ms = <150>;
+    quick-tap-ms = <200>;
 };
 
-&lt {
-    tapping-term-ms = <150>;
-    quick-tap-ms = <150>;
-};
+&lt { quick-tap-ms = <200>; };
 
 &trackball {
     // マウス層は zip_temp_layer のみ（automouse-layer は require-prior-idle と併用不可）
